@@ -1,0 +1,2 @@
+cmd: /media-trunk/srs/bin/srs -c /media-trunk/srs/conf/srs.conf
+cwd: /media-trunk/srs/
