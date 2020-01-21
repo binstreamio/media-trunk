@@ -1,0 +1,1 @@
+cmd: /media-trunk/ffmpeg/bin/ffmpeg -stream_loop -1 -re -i /media-trunk/assets/big_buck_bunny_720p_h264.mp4 -c:v copy -c:a copy -f mpegts srt://0.0.0.0:1950?pkt_size=1316&mode=listener
