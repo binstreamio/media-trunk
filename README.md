@@ -17,7 +17,7 @@ docker run --shm-size=256m -d -p 8080:8080 -p 1935:1935 -p 1950:1950/udp -p 1952
 | protocols | formats | codecs | test |
 | ------------- | ------------- | ------------- | ------------- |
 | RTMP | flv | H.264/AAC | ffplay rtmp://127.0.0.1/live/avc |
-| HTTP | flv | H.264/AAC | ffplay rtmp://127.0.0.1:8080/live/avc.flv |
+| HTTP | flv | H.264/AAC | ffplay http://127.0.0.1:8080/live/avc.flv |
 | HLS | mpegts | H.264/AAC | ffplay http://127.0.0.1:8080/live/avc.m3u8 |
 | HLS | mpegts | H.265/AAC | ffplay http://127.0.0.1:8080/live/hevc.m3u8 |
 | SRT | mpegts | H.264/AAC | ffplay srt://127.0.0.1:1950/live/test?paket_size=1316&mode=caller |
