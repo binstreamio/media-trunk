@@ -14,7 +14,7 @@ LABEL maintainer="contact@binstream.io"
 ADD media-trunk /media-trunk
 ADD /media-trunk/immortal/bin/* /usr/local/bin/
 
-WORKDIR /dev/shm/www
+RUN mkdir -p /dev/shm/www
 
 EXPOSE 8080 1935
 
