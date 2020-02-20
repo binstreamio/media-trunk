@@ -9,7 +9,7 @@ media-trunk is a media trunk with different protocols and formats for test purpo
 
 ### Start docker
 ``` bash
-docker run -d -p 8080:8080 -p 1935:1935 -p 1950:1950/udp -p 1952:1952/udp binstreamio/media-trunk
+docker run --shm-size=256m -d -p 8080:8080 -p 1935:1935 -p 1950:1950/udp -p 1952:1952/udp binstreamio/media-trunk
 ```
 
 ## Available formats

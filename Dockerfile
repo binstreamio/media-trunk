@@ -14,6 +14,8 @@ LABEL maintainer="contact@binstream.io"
 ADD media-trunk /media-trunk
 ADD /media-trunk/immortal/bin/* /usr/local/bin/
 
+WORKDIR /dev/shm/www
+
 EXPOSE 8080 1935
 
-CMD /media-trunk/immortal/bin/immortaldir /media-trunk/immortal/conf/ >/tmp/immortaldir.log 2>&1
+CMD /media-trunk/immortal/bin/immortaldir /media-trunk/immortal/conf/ > /tmp/immortaldir.log 2>&1
